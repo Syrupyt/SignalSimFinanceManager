@@ -10,7 +10,7 @@
   The best thing about this? It doesn't use your personal files:
     on Linux, it's usually ~/.local/share or ~/.config
     on Windows, it's usually in Appdata or Documents.
-  This program doesn't do that. The *only* files affected is the folder you run the program in.
+  This program doesn't do that. The *only* files affected is the folder you run the program in. So the only uninstall steps? Just delete the executable, and the json.
   
   Do note, I haven't tested shortcuts, and they may break due to my use of os.path. Though try it out and see.
 
