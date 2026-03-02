@@ -39,7 +39,8 @@
 
 
 ## For developers:
-  If you wish to modify this in any way, simply download the directory as a zip, and open it like any regular Python program. Visual Studio Code recommended, but you choose your seasoning. I'll allow any branch requests (if I can figure out how, github is freaky).
+  If you wish to modify this in any way, simply download the directory as a zip. Everything you're interested in should be in pyfiles. Visual Studio Code recommended, but you choose your seasoning. Also, make sure whatever you're using is *in the directory of the python file*. Otherwise it'll fail. 
+  I'll allow any branch requests (if I can figure out how, github is freaky).
   
   Needed packages (most are pre-installed):
     -tkinter
