@@ -4,6 +4,7 @@
 
 ## Saving:
   Saves to a savedata.json in the directory you put the executable in.
+  
   ⚠️ WARNING: IF MOVING EITHER OF THESE FILES, MOVE THEM TOGETHER. OTHERWISE A NEW SAVE FILE WILL BE CREATED.
   
   The best thing about this? It doesn't use your personal files:
