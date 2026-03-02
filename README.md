@@ -5,7 +5,7 @@
 ## Saving:
   Saves to a savedata.json in the directory you put the executable in.
   
-  ⚠️ WARNING: IF MOVING EITHER OF THESE FILES, MOVE THEM TOGETHER. OTHERWISE A NEW SAVE FILE WILL BE CREATED.
+  ⚠️ WARNING: IF MOVING EITHER OF THESE FILES, MOVE THEM TOGETHER. OTHERWISE A NEW SAVE FILE WILL BE CREATED, AND IT'LL BE SET TO ZERO
   
   The best thing about this? It doesn't use your personal files:
     on Linux, it's usually ~/.local/share or ~/.config
