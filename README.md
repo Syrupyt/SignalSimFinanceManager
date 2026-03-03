@@ -41,6 +41,8 @@
 ## For developers:
   If you wish to modify this in any way, simply download the directory as a zip. Everything you're interested in should be in pyfiles. Visual Studio Code recommended, but you choose your seasoning. Also, make sure whatever you're using is *in the directory of the python file*. Otherwise it'll fail. 
   I'll allow any branch requests (if I can figure out how, github is freaky).
+
+  Further note: The python file will NOT create the json on it's own when it is not compiled with pyinstaller. Must manually create it to test it.
   
   Needed packages (most are pre-installed):
     -tkinter
@@ -48,5 +50,6 @@
     -sys
     -json
     -shutil
+    -pyinstaller (only for compiling)
     
   Also, sorry for the severe lack of comments in my code!
