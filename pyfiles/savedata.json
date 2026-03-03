@@ -1,0 +1,23 @@
+{
+    "Azimuth": 0,
+    "Antenna detection": 0,
+    "Tracking": 0,
+    "Coordinates": 0,
+    "Elevation": 0,
+    "Buffer": 0,
+    "Cooling": 0,
+    "Download": 0,
+    "Modules": 0,
+    "Generator": 0,
+    "Recharge": 0,
+    "UPS": 0,
+    "Offset": 0,
+    "Distribution": 0,
+    "BGen": 0,
+    "BSpeed": 0,
+    "Calibration": 0,
+    "Efficiency": 0,
+    "RSpeed": 0,
+    "Analyze": 0,
+    "Polarization": 0
+}
