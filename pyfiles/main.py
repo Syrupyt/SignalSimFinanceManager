@@ -162,15 +162,19 @@ class CounterBox:
     def update_bottom_text(self, event=None):
         if self.bottom_label:
             index = counter_boxes.index(self)
-            self.bottom_label.config(text=bottom_text_presets[index])
+            total_selected = cost([self.number])
+            self.bottom_label.config(text=bottom_text_presets[index] + f"\n\n\nTotal cost to complete {json_presets[index]} upgrade: {total_selected}")
 
     def update_cost(self):
         if self.update_cost_label:
             numbers = [box.number for box in counter_boxes]
             c = cost(numbers)
             percent = round(((total - c)/total) * 100, 5)
-            text = f"\nCost required to complete: \n{c}\n\nTotal: \n{total}\n\nTotal spent: \n{total - c}\n\n% Complete: \n{percent}%\n"
+            text = f"Cost required to complete: {c}\n\nTotal: {total}\n\nTotal spent: {total - c}\n\n% Complete: {percent}%"
             self.update_cost_label.config(text=text)
+            index = counter_boxes.index(self)
+            total_selected = cost([self.number])
+            self.bottom_label.config(text=bottom_text_presets[index] + f"\n\n\nTotal cost to complete {json_presets[index]} upgrade: {total_selected}")
 
 # ----- Save Function -----
 def save_data():
@@ -234,6 +238,10 @@ text_frame.grid(row=0, column=2, sticky="n")
 # Top box: dynamic cost info
 cost_label = tk.Label(text_frame, text="", justify="left", anchor="nw", font=("Arial", 10), bd=2, relief="solid", padx=5, pady=5, width=30)
 cost_label.pack(fill="both", expand=True, pady=(0,10))
+
+#Separator
+horz_sep = ttk.Separator(text_frame, orient="horizontal")
+horz_sep.pack(fill='both', expand=True, pady=10)
 
 # Bottom dynamic text
 bottom_label = tk.Label(text_frame, text="Click an icon to show info here", justify="left", anchor="nw", width=30, wraplength=240)
