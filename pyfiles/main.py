@@ -247,11 +247,13 @@ horz_sep.pack(fill='both', expand=True, pady=10)
 bottom_label = tk.Label(text_frame, text="Click an icon to show info here", justify="left", anchor="nw", width=30, wraplength=240)
 bottom_label.pack(fill="x")
 
+
 # Link bottom label and cost_label to all boxes
 for box in counter_boxes:
     box.bottom_label = bottom_label
     box.update_cost_label = cost_label
     box.update_cost()  # initialize display
+bottom_label.config(text="Click an icon to show info here")
 
 # Save button
 save_button = tk.Button(root, text="Save", command=save_data)
